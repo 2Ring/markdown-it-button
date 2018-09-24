@@ -1,0 +1,15 @@
+{
+  "name": "markdown-it-button",
+  "version": "1.0.0",
+  "description": "Renders buttons",
+  "main": "index.js",
+  "keywords": [
+    "markdown-it",
+    "button"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-it-regexp": "^0.4.0"
+  }
+}
