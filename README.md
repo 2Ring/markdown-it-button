@@ -1,2 +1,2 @@
-# markdown-it-button
-Markdown-it plugin for buttons
+# markdown-it-span
+Markdown-it plugin for span elements
