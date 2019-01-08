@@ -2,7 +2,7 @@
 
 var mdRegexp = require('markdown-it-regexp');
 
-module.exports = function buttonPlugin(md) {
+module.exports = function spanPlugin(md) {
   md.use(mdRegexp(
       /(^|\s)(?:\^)([\w -]+)(?:\:([\w -]+))?(?:\^)/,
       function(match, utils) {
