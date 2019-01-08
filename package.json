@@ -1,11 +1,11 @@
 {
-  "name": "markdown-it-button",
+  "name": "markdown-it-span",
   "version": "1.0.0",
-  "description": "Renders buttons",
+  "description": "Renders spans",
   "main": "index.js",
   "keywords": [
     "markdown-it",
-    "button"
+    "span"
   ],
   "author": "",
   "license": "MIT",
