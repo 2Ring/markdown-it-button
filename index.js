@@ -1,12 +1,13 @@
 'use strict';
 
-var mdRegexp = require('markdown-it-regexp');
+const mdRegexp = require('markdown-it-regexp');
+const markdownIt = require('markdown-it');
 
 module.exports = function spanPlugin(md) {
   md.use(mdRegexp(
       /(^|\s)(?:\^)([^:]+)(?:\:([\w -]+))?(?:\^)/,
       function(match, utils) {
-        const text = md.render(match[2]).replace(/<p>|<\/p>/g, '');
+        const text = markdownIt().render(match[2]).replace(/<p>|<\/p>/g, '');
         if (match[3]) {
           return utils.escape(match[1]) + '<span class="' + utils.escape(match[3]) + '">' + text + '</span>';
         }
