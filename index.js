@@ -5,7 +5,7 @@ const markdownIt = require('markdown-it');
 
 module.exports = function spanPlugin(md) {
   md.use(mdRegexp(
-      /(^|\s)(?:\^)([^:]+)(?:\:([\w -]+))?(?:\^)/,
+      /(^|\s)(?:\^)([^:\^]+)(?:\:([\w -]+))?(?:\^)/,
       function(match, utils) {
         const text = markdownIt().render(match[2]).replace(/<p>|<\/p>/g, '');
         if (match[3]) {
